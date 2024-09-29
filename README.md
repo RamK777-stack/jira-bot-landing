@@ -1,50 +1,31 @@
-# React + TypeScript + Vite
+# JIRA Bot Chrome Extension
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**JIRA Bot Chrome Extension** is your go-to tool for managing JIRA tickets right from your browser. With real-time updates, AI-powered insights, and seamless integration into your workflow, it helps you stay productive without the need to switch between tabs.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 📢 **Instant JIRA Updates**
+Get notified in real-time about changes in tickets, sprint progress, and team summaries. Stay on top of your work without leaving your current tab.
 
-## Expanding the ESLint configuration
+### 🧠 **AI-Powered Insights**
+Leverage advanced AI to get smart summaries, predictions, and actionable suggestions based on your JIRA data. Make faster, data-driven decisions with less effort.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 🔄 **Seamless Integration**
+Our extension fits effortlessly into your workflow, allowing you to access, update, and manage JIRA tickets directly from Chrome. Chat with your tickets and get AI-powered summaries in a single, unified view.
 
-- Configure the top-level `parserOptions` property like this:
+### 🚀 **Boost Productivity**
+Save time by managing your JIRA tasks in one place. No more jumping between apps – stay focused and get more done.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Usage
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Log in to your Atlassian account via the extension.
+2. Add your JIRA API keys to access and manage your tickets.
+3. Start chatting with your JIRA tickets directly from the extension. Use simple commands to get updates, summaries, and AI-powered insights.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Contributing
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+We welcome contributions! If you’d like to report an issue or submit a pull request, feel free to check out our [Contributing Guide](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
