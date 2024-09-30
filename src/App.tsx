@@ -11,6 +11,7 @@ import apiClient from './lib/apiClient'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios'
+import { Analytics } from "@vercel/analytics/react"
 
 export default function LandingPage() {
   const [email, setEmail] = useState('')
@@ -248,6 +249,7 @@ export default function LandingPage() {
           <div className="absolute bottom-1/4 left-1/2 w-16 h-16 bg-blue-400 rounded-full opacity-50 animate-float animation-delay-4000"></div>
         </div>
         <ToastContainer />
+        <Analytics/>
       </div>
     </>
   )
